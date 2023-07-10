@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a2d37;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-color: #1c1f26;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+/* <!-- ----------- nav bar ----------- --> */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #7fb3e1;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #e7cff7;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    color: #7fb3e1;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #aa7ebe;
+}
+
+#school {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* ----------- about ----------- */
+
+#about {
+    padding: 80px 0;
+    color: #7fb3e1;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-info h1 {
+    color: #aa7ebe;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.tab-title {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #aa7ebe;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #e7cff7;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #83d1e5;
+    margin: 10px 0;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
