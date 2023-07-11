@@ -19,6 +19,11 @@ body {
     padding: 10px 10%;
 }
 
+.subtitle {
+    color: #aa7ebe;
+    font-size: 60px;
+    font-weight: 600;
+}
 /* <!-- ----------- nav bar ----------- --> */
 
 nav {
@@ -89,12 +94,6 @@ nav ul li a::after {
     flex-wrap: wrap;
 }
 
-.about-info h1 {
-    color: #aa7ebe;
-    font-size: 60px;
-    font-weight: 600;
-}
-
 .tab-title {
     display: flex;
     margin: 20px 0 40px;
@@ -129,7 +128,26 @@ nav ul li a::after {
     margin: 10px 0;
 }
 
+.coursework {
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.info {
+    flex-basis: 75%;
+}
+
+.info ul li {
+    list-style: outside;
+    margin: 4px 4px 10px 25px;
+}
+
+.time-frame {
+    flex-basis: 25%;
+}
+
 .tab-contents ul li span {
+    font-size: 24px;
     color: #83d1e5;
     margin: 10px 0;
 }
@@ -139,5 +157,35 @@ nav ul li a::after {
 }
 
 .tab-contents.active-tab {
+    display: block;
+}
+
+.tab-contents ul li span.bold {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* <!-- ----------- projects ----------- --> */
+
+#projects {
+    padding: 50px 0;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1r));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
     display: block;
 }

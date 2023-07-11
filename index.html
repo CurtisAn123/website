@@ -7,16 +7,17 @@
         <title>Personal Website</title>
         <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/7d0e5a511a.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!-- ----------- nav bar ----------- -->
         <div id="header">
-            <!-- ----------- nav bar ----------- -->
             <div class="container">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#">Hobbies</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -28,63 +29,171 @@
                 </div>
             </div>
         </div>
+
         <!-- ----------- about ----------- -->
         <div id="about">
             <div class="container">
-                <div class="row">
-                    <div class="about-info">
-                        <h1>About Me</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <div class="tab-title">
-                            <p class="tab-links active" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <!-- Skills -->
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Front-End Development</span><br />Creating Webpages</li>
-                                <li><span>Back-End Development</span><br />Get / Post Requests</li>
-                                <li>
-                                    <span>Quality Assurance</span><br />Tested Code to ensure they produced the right
-                                    result
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Experience -->
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>RBC</span><br />Software Developer Co-op</li>
-                                <li><span>Triway Education</span><br />Tutor</li>
-                                <li><span>Mississauga Code Club</span><br />Tutor</li>
-                            </ul>
-                        </div>
-                        <!-- Education -->
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>Wilfrid Laurier University</span><br />Business Administration</li>
-                                <li><span>University of Waterloo</span><br />Computer Science</li>
-                                <li><span>John Fraser Secondary School</span><br />High School</li>
-                            </ul>
-
-                            <!-- <div class="time-in-school">
-                                <ul>
-                                    <li>2021 - 2026</li>
-                                    <li>2021 - 2026</li>
-                                    <li>2017 - 2021</li>
-                                </ul>
-                            </div> -->
-                        </div>
+                <div class="about-info">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        I am a 2nd year student studying Computer Science at University of Waterloo and Business
+                        Administration at Wilfrid Laurier University. I have experience in front-end and back-end
+                        development. I have created fully functional webpages using HTML, CSS, and Javascript and am
+                        able to use Springboot to handle get and post requests, and retreive data from an H2 Database.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- Skills -->
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li>
+                                <span>Languages</span><br />Java, SQL, HTML, CSS, Javascript, C, C++, Python, Scheme
+                            </li>
+                            <li><span>Tools</span><br />Git, Postman, Springboot, VSCode, Linux, Eclipse, Vim</li>
+                        </ul>
+                    </div>
+                    <!-- Experience -->
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li>
+                                <div class="row">
+                                    <div class="info">
+                                        <p><span>RBC</span><br />Software Developer</p>
+                                        <ul>
+                                            <li>
+                                                Wrote <span class="bold">JUNIT</span> tests using
+                                                <span class="bold">Mockito</span> to maintain high code coverage
+                                            </li>
+                                            <li>
+                                                Tested secure <span class="bold">microservices</span> with
+                                                <span class="bold">Postman</span> using Basic Auth and Bearer Tokens
+                                            </li>
+                                            <li>
+                                                Replaced <span class="bold">deprecated</span> functions and updated
+                                                <span class="bold">dependencies</span> to migrated
+                                                <span class="bold">SpringBoot</span> services from JDK 8 to 17
+                                            </li>
+                                            <li>
+                                                <span class="bold">Migrated</span> services from Red Hat OpenShift 4 to
+                                                <span class="bold">Miscrosoft Azure</span>
+                                            </li>
+                                            <li>
+                                                <span class="bold">Documented</span> changes in detail made, steps to
+                                                migrate services, and potential errors with fixes
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time-frame">
+                                        <p>Jan 2023 - Apr 2023</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="info">
+                                        <p><span>Triway Education</span><br />Computer Science and Math Tutor</p>
+                                        <ul>
+                                            <li>
+                                                Created and taught engaging
+                                                <span class="bold">Java, Racket, and Python</span> lessons for middle
+                                                and high school students
+                                            </li>
+                                            <li>
+                                                <span class="bold">Organized</span> extra help sessions with students to
+                                                answer questions and explain difficult concepts
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time-frame">
+                                        <p>Sep 2020 - Aug 2022</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="info">
+                                        <p><span>FraserHacks</span><br />Hackathon Organizer</p>
+                                        <ul>
+                                            <li>
+                                                <span class="bold">Recruited</span> sponsors for food, prizes, and
+                                                funding for the event
+                                            </li>
+                                            <li>
+                                                Sponsors included: HyperX, Voiceflow, DigitalOcean, Wolfram, Hack Club,
+                                                and Panago Pizza.
+                                            </li>
+                                            <li>
+                                                <span class="bold">Planned</span> food, t-shirts, and prizes for 125+
+                                                students
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time">
+                                        <p>Sep 2019 - Dec 2019</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <div class="row">
+                                    <div class="info">
+                                        <p><span>Wilfrid Laurier University</span><br />Business Administration</p>
+                                    </div>
+                                    <div class="time">
+                                        <p>2021-2026</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="info">
+                                        <p><span>University of Waterloo</span><br />Computer Science</p>
+                                        <p class="coursework">Relevant Coursework:</p>
+                                        <ul>
+                                            <li>Data Structures and Algorithms</li>
+                                            <li>Object Oriented Programming</li>
+                                        </ul>
+                                    </div>
+                                    <div class="time">
+                                        <p>2021-2026</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="info">
+                                        <p><span>John Fraser Secondary School</span><br />High School Diploma</p>
+                                    </div>
+                                    <div class="time">
+                                        <p>2017-2021</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- ----------- projects ----------- -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="subtitle">Projects</h1>
+                <div class="project-list">
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                </div>
+            </div>
+        </div>
+
         <script src="./opentabs.js"></script>
     </body>
 </html>
